@@ -1,5 +1,6 @@
 
 <?php
+#Ruta de la API del proyecto
 const API_URL = "https://whenisthenextmcufilm.com/api";
 #Inicializar una nueva sesión de cURL; ch = cURL handle
 $ch = curl_init(API_URL);
@@ -31,6 +32,7 @@ curl_close($ch);
 
 <main>
 <section>
+<!-- Ponemos la imagen recogiendo la información del json para que nos proporcione la url-->
     <img src="<?= $data["poster_url"]; ?>" width="300" alt="Poster de <?= $data["title"]; ?>"/>
 </section>
 
